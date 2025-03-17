@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/src",
+                "/usr/src/linux-headers-6.6.20+rpt-common-rpi/include/",
+                "/usr/src/linux-headers-6.6.20+rpt-common-rpi/arch/arm64/include/",
+                "/usr/src/linux-headers-6.6.20+rpt-rpi-v8/include/",
+                "/usr/src/linux-headers-6.6.20+rpt-rpi-v8/arch/arm64/include/generated",
+                "/usr/src/linux-headers-6.6.20+rpt-rpi-2712/include/",
+                "/usr/src/linux-headers-6.6.20+rpt-rpi-2712/arch/arm64/include/generated/"
+            ],
+            "defines": ["__KERNEL__", "MODULE"],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "linux-gcc-arm64"
+        }
+    ],
+    "version": 4
+}

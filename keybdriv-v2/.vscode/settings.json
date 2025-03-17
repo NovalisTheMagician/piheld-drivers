@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "bbqx0kbd_i2chelper.h": "c",
+        "i2c.h": "c",
+        "nvkbd_codes.h": "c"
+    }
+}

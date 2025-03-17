@@ -1,0 +1,28 @@
+// SPDX-License-Identifier: GPL-2.0
+/dts-v1/;
+/plugin/;
+
+/{
+	compatible = "brcm,bcm2835";
+
+	fragment@0 {
+		target = <&i2c1>;
+
+		__overlay__ {
+			#address-cells = <1>;
+			#size-cells = <0>;
+			nvkbd: nvkbd@1f {
+				compatible = "novalis,nvkbd";
+				reg = <0x1F>;
+				irq-gpio = <&gpio 27 0x2>;
+				interrupts = <27 2>;
+				interrupt-parent = <&gpio>;
+				interrupt-controller;
+			};
+		};
+	};
+	__overrides__ {
+		irq_pin = <&nvkbd>,"interrupts:0";
+	};
+};
+
